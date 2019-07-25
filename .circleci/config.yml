@@ -197,7 +197,9 @@ jobs:
       - *setup_circleci_bazel_config
       # Setup remote execution and run RBE-compatible tests.
       - *setup_bazel_remote_execution
-      - run: yarn bazel test //... --build_tag_filters=-ivy-only --test_tag_filters=-ivy-only
+      - run:
+          command: yarn bazel test //... --build_tag_filters=-ivy-only --test_tag_filters=-ivy-only
+          no_output_timeout: 20m
       - run: mkdir ~/testlogs
       - run: cp -Lr dist/testlogs/* ~/testlogs
       - store_test_results:
@@ -219,7 +221,9 @@ jobs:
         # We need to explicitly specify the --symlink_prefix option because otherwise we would
         # not be able to easily find the output bin directory when uploading artifacts for size
         # measurements.
-      - run: yarn test-ivy-aot //... --symlink_prefix=dist/
+      - run:
+          command: yarn test-ivy-aot //... --symlink_prefix=dist/
+          no_output_timeout: 20m
 
         # Publish bundle artifacts which will be used to calculate the size change. **Note**: Make
         # sure that the size plugin from the Angular robot fetches the artifacts from this CircleCI
@@ -271,7 +275,9 @@ jobs:
         # fail to acquire browsers. For example:
         # 14 02 2019 19:52:33.170:WARN [launcher]: chrome beta on SauceLabs have not captured in 180000 ms, killing.
         # //packages/forms/test:web_test_sauce TIMEOUT in 315.0s
-      - run: yarn bazel test --config=saucelabs //:test_web_all
+      - run:
+          command: yarn bazel test --config=saucelabs //:test_web_all
+          no_output_timeout: 20m
       - run: ./scripts/saucelabs/stop-tunnel.sh
       - *notify_dev_infra_on_fail
 
