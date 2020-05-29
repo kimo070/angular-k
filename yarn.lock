@@ -859,6 +859,11 @@ agent-base@4, agent-base@^4.1.0, agent-base@~4.2.0:
   dependencies:
     es6-promisify "^5.0.0"
 
+agent-base@5:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-5.1.1.tgz#e8fb3f242959db44d63be665db7a8e739537a32c"
+  integrity sha512-TMeqbNl2fMW0nMjTEPOwe3J/PRFP4vqeoNuQMG0HlMrtm5QxKqdvAkZ1pRBQ/ulIyDD5Yq0nJ7YbdD8ey0TO3g==
+
 agentkeepalive@^3.4.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/agentkeepalive/-/agentkeepalive-3.5.2.tgz#a113924dd3fa24a0bc3b78108c450c2abee00f67"
@@ -1719,17 +1724,20 @@ browserify-zlib@~0.1.4:
   dependencies:
     pako "~0.2.0"
 
-browserstack@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/browserstack/-/browserstack-1.5.0.tgz#b565425ad62ed72c1082a1eb979d5313c7d4754f"
-  integrity sha1-tWVCWtYu1ywQgqHrl51TE8fUdU8=
+browserstack-local@^1.3.7:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/browserstack-local/-/browserstack-local-1.4.5.tgz#115153ce1d08d58b7575ecf4381d54d10b42d2cf"
+  integrity sha512-0/VdSv2YVXmcnwBb64XThMvjM1HnZJnPdv7CUgQbC5y/N9Wsr0Fu+j1oknE9fC/VPx9CpoSC6CJ0kza42skMSA==
   dependencies:
-    https-proxy-agent "1.0.0"
+    https-proxy-agent "^4.0.0"
+    is-running "^2.1.0"
+    ps-tree "=1.2.0"
+    temp-fs "^0.9.9"
 
-browserstack@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/browserstack/-/browserstack-1.5.1.tgz#e2dfa66ffee940ebad0a07f7e00fd4687c455d66"
-  integrity sha512-O8VMT64P9NOLhuIoD4YngyxBURefaSdR4QdhG8l6HZ9VxtU7jc3m6jLufFwKA5gaf7fetfB2TnRJnMxyob+heg==
+browserstack@^1.5.1, browserstack@~1.5.1:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/browserstack/-/browserstack-1.5.3.tgz#93ab48799a12ef99dbd074dd595410ddb196a7ac"
+  integrity sha512-AO+mECXsW4QcqC9bxwM29O7qWa7bJT94uBFzeb5brylIQwawuEziwq20dPYbins95GlWzOawgyDNdjYAo32EKg==
   dependencies:
     https-proxy-agent "^2.2.1"
 
@@ -1737,14 +1745,6 @@ browserstacktunnel-wrapper@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/browserstacktunnel-wrapper/-/browserstacktunnel-wrapper-2.0.1.tgz#ffe1910d6e39fe86618183e826690041af53edae"
   integrity sha1-/+GRDW45/oZhgYPoJmkAQa9T7a4=
-  dependencies:
-    https-proxy-agent "^1.0.0"
-    unzip "~0.1.9"
-
-browserstacktunnel-wrapper@~2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/browserstacktunnel-wrapper/-/browserstacktunnel-wrapper-2.0.2.tgz#3d11159c18cd202b2920b09830fbe4bd90f079b5"
-  integrity sha512-7w7HYA00qjBtuQH0c5rqW7RbWPHyRROqTZofwNp5G0sKc2fYChsTfbHz3ul8Yd+ffkQvR81m+iPjEB004P6kxQ==
   dependencies:
     https-proxy-agent "^1.0.0"
     unzip "~0.1.9"
@@ -3058,17 +3058,17 @@ debug@3.1.0, debug@=3.1.0, debug@~3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@4, debug@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  dependencies:
+    ms "^2.1.1"
+
 debug@^3.0.0, debug@^3.1.0:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
-  dependencies:
-    ms "^2.1.1"
-
-debug@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
-  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   dependencies:
     ms "^2.1.1"
 
@@ -3715,7 +3715,7 @@ event-emitter@^0.3.5, event-emitter@~0.3.5:
     d "1"
     es5-ext "~0.10.14"
 
-event-stream@^3.1.5, event-stream@^3.3.2:
+event-stream@=3.3.4, event-stream@^3.1.5, event-stream@^3.3.2:
   version "3.3.4"
   resolved "https://registry.npmjs.org/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
   integrity sha1-SrTJoPWlTbkzi0w02Gv86PSzVXE=
@@ -5443,7 +5443,7 @@ https-browserify@0.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.0.tgz#b3ffdfe734b2a3d4a9efd58e8654c91fce86eafd"
   integrity sha1-s//f5zSyo9Sp79WOhlTJH86G6v0=
 
-https-proxy-agent@1.0.0, https-proxy-agent@^1.0.0:
+https-proxy-agent@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-1.0.0.tgz#35f7da6c48ce4ddbfa264891ac593ee5ff8671e6"
   integrity sha1-NffabEjOTdv6JkiRrFk+5f+GceY=
@@ -5459,6 +5459,14 @@ https-proxy-agent@^2.2.1:
   dependencies:
     agent-base "^4.1.0"
     debug "^3.1.0"
+
+https-proxy-agent@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-4.0.0.tgz#702b71fb5520a132a66de1f67541d9e62154d82b"
+  integrity sha512-zoDhWrkR3of1l9QAL8/scJZyLu8j/gBkcwcaQOZh7Gyh/+uJQzGVETdgT30akuwkpL8HTRfssqI3BZuV18teDg==
+  dependencies:
+    agent-base "5"
+    debug "4"
 
 humanize-ms@^1.2.1:
   version "1.2.1"
@@ -5970,6 +5978,11 @@ is-retry-allowed@^1.0.0, is-retry-allowed@^1.1.0:
   resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-1.1.0.tgz#11a060568b67339444033d0125a61a20d564fb34"
   integrity sha1-EaBgVotnM5REAz0BJaYaINVk+zQ=
 
+is-running@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/is-running/-/is-running-2.1.0.tgz#30a73ff5cc3854e4fc25490809e9f5abf8de09e0"
+  integrity sha1-MKc/9cw4VOT8JUkICen1q/jeCeA=
+
 is-stream-ended@^0.1.0:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/is-stream-ended/-/is-stream-ended-0.1.4.tgz#f50224e95e06bce0e356d440a4827cd35b267eda"
@@ -6461,13 +6474,13 @@ jws@^3.1.3:
     jwa "^1.1.5"
     safe-buffer "^5.0.1"
 
-karma-browserstack-launcher@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/karma-browserstack-launcher/-/karma-browserstack-launcher-1.3.0.tgz#61fe3d36b1cf10681e40f9d874bf37271fb1c674"
-  integrity sha512-LrPf5sU/GISkEElWyoy06J8x0c8BcOjjOwf61Wqu6M0aWQu0Eoqm9yh3xON64/ByST/CEr0GsWiREQ/EIEMd4Q==
+karma-browserstack-launcher@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/karma-browserstack-launcher/-/karma-browserstack-launcher-1.6.0.tgz#2f6000647073e77ae296653b8830b279669766ef"
+  integrity sha512-Y/UWPdHZkHIVH2To4GWHCTzmrsB6H7PBWy6pw+TWz5sr4HW2mcE+Uj6qWgoVNxvQU1Pfn5LQQzI6EQ65p8QbiQ==
   dependencies:
-    browserstack "1.5.0"
-    browserstacktunnel-wrapper "~2.0.1"
+    browserstack "~1.5.1"
+    browserstack-local "^1.3.7"
     q "~1.5.0"
 
 karma-chrome-launcher@2.2.0, karma-chrome-launcher@^2.2.0:
@@ -8799,6 +8812,13 @@ prr@~1.0.1:
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
 
+ps-tree@=1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/ps-tree/-/ps-tree-1.2.0.tgz#5e7425b89508736cdd4f2224d028f7bb3f722ebd"
+  integrity sha512-0VnamPPYHl4uaU/nSFeZZpR21QAWRz+sRv4iW9+v/GS/J5U5iZB5BNN6J0RMoOvdx2gWM2+ZFMIm58q24e4UYA==
+  dependencies:
+    event-stream "=3.3.4"
+
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
@@ -9490,6 +9510,13 @@ rimraf@2.x.x, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2:
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
     glob "^7.1.3"
+
+rimraf@~2.5.2:
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
+  integrity sha1-loAAk8vxoMhr2VtGJUZ1NcKd+gQ=
+  dependencies:
+    glob "^7.0.5"
 
 ripemd160@0.2.0:
   version "0.2.0"
@@ -10709,6 +10736,13 @@ tar@^4, tar@^4.3.0, tar@^4.4.8:
     mkdirp "^0.5.0"
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
+
+temp-fs@^0.9.9:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/temp-fs/-/temp-fs-0.9.9.tgz#8071730437870720e9431532fe2814364f8803d7"
+  integrity sha1-gHFzBDeHByDpQxUy/igUNk+IA9c=
+  dependencies:
+    rimraf "~2.5.2"
 
 temp@~0.4.0:
   version "0.4.0"
