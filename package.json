@@ -103,7 +103,7 @@
     "selenium-webdriver": "3.5.0",
     "shelljs": "^0.8.1",
     "source-map": "^0.6.1",
-    "source-map-support": "0.5.9",
+    "source-map-support": "0.5.19",
     "systemjs": "0.18.10",
     "tsickle": "0.36.0",
     "tslib": "^1.9.0",
