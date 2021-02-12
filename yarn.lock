@@ -176,12 +176,10 @@
     semver "5.6.0"
     tmp "0.0.33"
 
-"@bazel/protractor@0.34.0":
-  version "0.34.0"
-  resolved "https://registry.yarnpkg.com/@bazel/protractor/-/protractor-0.34.0.tgz#af166306518bf1319e8ca255f798712c8714b5e9"
-  integrity sha512-U6O8hRlerkQ/WfnEVct1yipVQr5epdYaLiOW1eLpmiRMM4RuMhIpIyKkpum5xqFlYP5kwqwje8BS8NHvBfvZnQ==
-  dependencies:
-    protractor "^5.4.2"
+"@bazel/protractor@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@bazel/protractor/-/protractor-3.1.0.tgz#9d4e2514fa6949c58996b38824409811408924a8"
+  integrity sha512-39ilFP+grfdetXJOfeImNgNksB42vvlMmM/PU4cO5hUpGvDWSVpx9jIJUdr+NySf3M4A+Kizk3NtcO3xMNmwyQ==
 
 "@bazel/typescript@0.34.0":
   version "0.34.0"

@@ -37,7 +37,7 @@
     "@angular/bazel": "file:./tools/npm/@angular_bazel",
     "@bazel/jasmine": "0.34.0",
     "@bazel/karma": "0.34.0",
-    "@bazel/protractor": "0.34.0",
+    "@bazel/protractor": "3.1.0",
     "@bazel/typescript": "0.34.0",
     "@microsoft/api-extractor": "^7.0.21",
     "@schematics/angular": "^8.0.0-beta.15",
