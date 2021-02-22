@@ -426,10 +426,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@types/angular@^1.6.47":
-  version "1.6.48"
-  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.6.48.tgz#e8f77bf41d00d3293421cbaaed2bafb4d5f399f9"
-  integrity sha512-zF0WlsWOjTkZjWq93ESfvq/4s3E9P8EnbIjOFzlDbhepL2iOBk9SJf98eqnV2fvjstwrPF+uYZvcAggL7Xw1FA==
+"@types/angular@^1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.8.1.tgz#940b16476adff7b66608aae778e5e9f1c57ab847"
+  integrity sha512-8zEjTC3gpkva6/dbUkiSxIUGUxYm9HD/pJJ0lbqfEM2TWqi/3vs4VtgoFxVXt5bmuJ+6G2caO2HaMD+NzB1VwA==
 
 "@types/argparse@1.0.33":
   version "1.0.33"
